@@ -1,0 +1,21 @@
+<p onmouseover="myfunc(this)" onmouseout="myfunc1(this)">test</p>
+<style type="text/css">
+	p{
+		width: 200px;height: 200px;background: grey;
+	}
+</style>
+
+<script type="text/javascript">
+	function myfunc(myvar){
+		console.log(myvar)
+		myvar.style.width = "300px"
+		myvar.style.height = "150px"
+		myvar.style.background = "tomato"
+	}
+	function myfunc1(myvar){
+		console.log(myvar)
+		myvar.style.width = "200px"
+		myvar.style.height = "200px"
+		myvar.style.background = "cyan"
+	}
+</script>

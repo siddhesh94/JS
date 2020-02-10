@@ -1,0 +1,35 @@
+<ul></ul>
+<select></select>
+<script type="text/javascript">
+	for(i=1;i<=5;i++){
+		console.log(i , i**3)
+	}
+
+	no=5;
+	for(i=1;i<=5;i++){
+		console.log(`${no} X ${i} = ${no*i}`)
+	}
+
+	for(i=1;i<=10;i++){
+		if(i%2 == 0){
+			console.log(i , "even")
+		}
+	}
+
+	str = ``;
+	for(i=1;i<=10;i++){
+		str = str + `<li>${i}</li>`
+	}
+	console.log(str);
+	document.querySelector("ul").innerHTML = str;
+
+	str = ``;
+	for(i=1;i<=10;i++){
+		str = str + `<option>${i}</option>`
+	}
+	console.log(str);
+	document.querySelector("select").innerHTML = str;
+</script>
+
+
+

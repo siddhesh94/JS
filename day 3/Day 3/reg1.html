@@ -1,0 +1,13 @@
+<input type="text" id="txt">
+<button onclick="getval()">Enter</button>
+<script type="text/javascript">
+	// w2Y
+
+	function getval(){
+		txt = document.querySelector("#txt").value;
+		// console.log(txt)
+		regExp = /^[a-z][0-9][A-Z]$/
+		ans = regExp.test(txt)
+		console.log(ans)
+	}
+</script>

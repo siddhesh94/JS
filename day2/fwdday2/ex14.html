@@ -1,0 +1,29 @@
+<p class="para1">test</p>
+<p class="para2">test</p>
+
+<button onclick="myfunc()">Enter</button>
+
+<style type="text/css">
+	p{
+		background: grey;
+	}
+	.para1{
+		background: tomato;
+	}
+	.para2{
+		background-color: cyan;
+	}
+</style>
+
+<script type="text/javascript">
+	myfunc = ()=>{
+		// console.log("test")
+		console.log(document)
+		console.log(document.querySelector(".para1"))
+		console.log(document.querySelector(".para2"))
+
+		document.querySelector(".para1").style.backgroundColor="lightgrey"
+		document.querySelector(".para2").innerHTML = "hello"
+
+	}
+</script>

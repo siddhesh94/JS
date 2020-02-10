@@ -1,0 +1,16 @@
+<input type="text" id="txt">
+<button onclick="getval()">Enter</button>
+<script type="text/javascript">
+	// omkar_patil
+	// omkar.patil
+	// 123_omkar.patil
+	//om
+
+	function getval(){
+		txt = document.querySelector("#txt").value;
+		// console.log(txt)
+		regExp = /^[a-zA-Z0-9]([a-zA-Z0-9_\.]{1,})?[a-zA-Z0-9]$/
+		ans = regExp.test(txt)
+		console.log(ans)
+	}
+</script>

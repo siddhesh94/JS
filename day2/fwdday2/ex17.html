@@ -1,0 +1,26 @@
+<input type="text" id="txt1">
+<input type="text" id="txt2">
+<button onclick="myfunc()">Enter</button>
+<p></p>
+
+<script type="text/javascript">
+	function myfunc(){
+		data1 = document.querySelector("#txt1").value;
+		// console.log(data1, typeof data1)
+		data2 = document.querySelector("#txt2").value;
+		// console.log(data2, typeof data2)
+
+		if(data1=="" || data2==""){
+			document.querySelector("p").innerHTML ="please enter numbers";
+		}
+		else if(isNaN(data1) || isNaN(data2)){
+			document.querySelector("p").innerHTML ="Invalid Numbers";
+		}
+		else{
+			// ans = parseInt(data1) + parseInt(data2);
+			ans = parseFloat(data1) + parseFloat(data2);
+			// console.log(ans);
+			document.querySelector("p").innerHTML = ans;
+		}
+	}
+</script>

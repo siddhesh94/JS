@@ -1,0 +1,13 @@
+<input type="text" id="txt">
+<button onclick="getval()">Enter</button>
+<script type="text/javascript">
+	// 1-12 , 01 or 09 ,   1-9 , 10,11,12
+
+	function getval(){
+		txt = document.querySelector("#txt").value;
+		// console.log(txt)
+		regExp = /^([0]?[1-9]|[1][0-2])$/
+		ans = regExp.test(txt)
+		console.log(ans)
+	}
+</script>

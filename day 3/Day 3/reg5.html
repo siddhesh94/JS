@@ -1,0 +1,15 @@
+<input type="text" id="txt">
+<button onclick="getval()">Enter</button>
+<script type="text/javascript">
+	// om
+	// omkar patil
+	// het
+
+	function getval(){
+		txt = document.querySelector("#txt").value;
+		// console.log(txt)
+		regExp = /^[a-zA-Z]([a-zA-Z ]{1,})?[a-zA-Z]$/
+		ans = regExp.test(txt)
+		console.log(ans)
+	}
+</script>

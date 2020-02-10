@@ -1,0 +1,23 @@
+<input type="text" id="txt" placeholder="Enter Number" onfocus="myfunc1(this)" onblur="myfunc2(this)" >
+<button onclick="myfunc()">Enter</button>
+
+<script type="text/javascript">
+	myfunc = function(){
+		console.log( document.querySelector("#txt") );
+		document.querySelector("#txt").value="hello"
+		document.querySelector("#txt").style.borderStyle="solid"
+		document.querySelector("#txt").style.borderColor="black"
+		document.querySelector("#txt").style.borderWidth="1px"
+		document.querySelector("#txt").style.color = "green"
+		document.querySelector("#txt").style.background = "grey"
+	}
+
+	myfunc1 = function(myvar){
+		myvar.style.borderColor="red"
+	}
+
+	myfunc2 = function(myvar){
+		myvar.style.borderColor="green"
+	}
+
+</script>

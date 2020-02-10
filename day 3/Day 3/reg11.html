@@ -1,0 +1,13 @@
+<input type="text" id="txt">
+<button onclick="getval()">Enter</button>
+<script type="text/javascript">
+	// omkar.patil@yahoo.co.in
+
+	function getval(){
+		txt = document.querySelector("#txt").value;
+		// console.log(txt)
+		regExp = /^([a-zA-Z0-9]([a-zA-Z0-9_\.]{1,})?[a-zA-Z0-9])@([a-zA-Z0-9]([a-zA-Z0-9\-]{1,})?[a-zA-Z0-9])\.([a-zA-Z]{2,})(\.[a-zA-Z]{2,})?$/
+		ans = regExp.test(txt)
+		console.log(ans)
+	}
+</script>

@@ -1,0 +1,23 @@
+<h1 id="m1">HELLo</h1>
+<h1 id="m2">HELLo</h1>
+
+<button onclick="myfunc()">Enter</button>
+<style type="text/css">
+	h1{
+		background: grey;
+	}
+	#m1{
+		font-size: 60px;
+	}
+	#m2{
+		border-style: solid;
+	}
+</style>
+<script type="text/javascript">
+	myfunc = function(){
+		console.log(document.querySelector("#m1"))
+		console.log(document.querySelector("#m2"))
+		document.querySelector("#m1").style.fontSize="20px"
+		document.querySelector("#m2").style.borderStyle="dashed"
+	}
+</script>

@@ -1,0 +1,13 @@
+<input type="text" id="txt1">
+<input type="text" id="txt2">
+<button onclick="myfunc()">Enter</button>
+
+<script type="text/javascript">
+	function myfunc(){
+		data1 = document.querySelector("#txt1").value;
+		data2 = document.querySelector("#txt2").value;
+		ans = parseFloat(data1) + parseFloat(data2);
+		
+		alert(ans)
+	}
+</script>

@@ -1,0 +1,13 @@
+<input type="text" id="txt">
+<button onclick="getval()">Enter</button>
+<script type="text/javascript">
+	// 400008
+
+	function getval(){
+		txt = document.querySelector("#txt").value;
+		// console.log(txt)
+		regExp = /^[1-9][0-9]{5}$/
+		ans = regExp.test(txt)
+		console.log(ans)
+	}
+</script>
