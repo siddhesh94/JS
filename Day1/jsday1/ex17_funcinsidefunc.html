@@ -1,0 +1,21 @@
+<script type="text/javascript">
+	
+	myvar1=function()
+	{
+		console.log("hello")
+	}
+
+	myvar2=function()
+	{
+		console.log("world")
+	}
+
+	myvar3=function(x,y)
+	{
+		console.log("3rd function")
+		x();
+		y();
+	}
+
+	myvar3(myvar1,myvar2);
+</script>
