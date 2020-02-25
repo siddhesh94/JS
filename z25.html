@@ -1,0 +1,18 @@
+<input type="radio" name="user" value="1" onchange="myfunc(this.value)"> Show
+<input type="radio" name="user" value="2" onchange="myfunc(this.value)"> Hide
+
+<input type="text" id="result" style="display: none"/>
+
+<script type="text/javascript">
+	function myfunc(xyz){
+		// console.log(xyz)
+
+		if(xyz==1){
+			document.querySelector("#result").style.display = "block";
+		}
+		else if(xyz==2){
+			document.querySelector("#result").style.display = "none";
+
+		}
+	}
+</script>

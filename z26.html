@@ -1,0 +1,16 @@
+<input type="checkbox" onchange="myfunc(this)">
+
+<input type="password" id="txt">
+
+<script type="text/javascript">
+	function  myfunc(xyz){
+		console.log(xyz)
+
+		if(xyz.checked == true){
+			document.querySelector("#txt").setAttribute("type","text");
+		}
+		else{
+			document.querySelector("#txt").setAttribute("type","password");
+		}
+	}
+</script>

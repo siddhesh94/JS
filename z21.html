@@ -1,0 +1,43 @@
+<input type="text" id="txt1"> <br>
+<input type="text" id="txt2"> <br>
+
+<select id="type">
+	<option>+</option>
+	<option>-</option>
+	<option>*</option>
+	<option>/</option>
+</select>
+<br>
+
+<button onclick="myfunc()">Calculate</button>
+
+<p id="result">0</p>
+
+<script type="text/javascript">
+	function myfunc(){
+		rec1 = parseInt(document.querySelector("#txt1").value);
+		rec2 = parseInt(document.querySelector("#txt2").value);
+		console.log(rec1,rec2)
+		console.log(typeof rec1)
+
+		ans = document.querySelector("#type").value;
+		console.log(ans);
+
+		if(ans=="+"){
+			sum = rec1+rec2;
+		}
+		else if(ans=="-"){
+			sum = rec1-rec2;
+			
+		}
+		else if(ans=="*"){
+			sum = rec1*rec2;
+			
+		}
+		else if(ans=="/"){
+			sum = rec1/rec2;
+			
+		}
+		document.querySelector("#result").innerHTML = sum;
+	}
+</script>

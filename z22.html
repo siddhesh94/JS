@@ -1,0 +1,29 @@
+<input type="text" id="txt1"> <br>
+
+<select id="type">
+	<option>Square</option>
+	<option>Cube</option>
+</select>
+<br>
+
+<button onclick="myfunc()">Calculate</button>
+
+<p id="result">0</p>
+
+<script type="text/javascript">
+	function myfunc(){
+		rec1 = parseInt(document.querySelector("#txt1").value);
+
+		ans = document.querySelector("#type").value;
+		console.log(ans);
+
+		if(ans == "Square"){
+			sum = Math.pow(rec1,2)
+		}
+		else if(ans=="Cube"){
+			sum = Math.pow(rec1,3)
+
+		}
+		document.querySelector("#result").innerHTML = sum;
+	}
+</script>

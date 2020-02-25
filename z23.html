@@ -1,0 +1,26 @@
+<input type="text" id="txt1"> <br>
+
+
+<button onclick="myfunc()">Calculate</button>
+
+<p id="result">0</p>
+
+<script type="text/javascript">
+	function myfunc(){
+		rec1 = document.querySelector("#txt1").value;
+		console.log(rec1);
+
+		ans = rec1.split("/")
+		// console.log(ans);
+
+		year = ans[2];
+		console.log(year);
+
+		curRec = new Date();
+		curYear = curRec.getFullYear();
+
+		age = curYear - year
+		document.querySelector("#result").innerHTML = age;
+
+	}
+</script>

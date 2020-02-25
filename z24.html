@@ -1,0 +1,15 @@
+<select  onchange="myfunc(this.value)">
+	<option>Red</option>
+	<option>Black</option>
+	<option>grey</option>
+</select>
+
+
+<div>HELLO</div>
+
+<script type="text/javascript">
+	function myfunc(xyz){
+		// console.log(xyz)
+		document.querySelector("div").style.background = xyz;
+	}
+</script>

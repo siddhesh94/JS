@@ -1,0 +1,46 @@
+<h1 onclick="myfunc(this)">HEad 1</h1>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+</p>
+<h1 onclick="myfunc(this)">HEad 2</h1>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+</p>
+<h1 onclick="myfunc(this)">HEad 3</h1>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+</p>
+
+<style type="text/css">
+	h1,p{
+		width: 300px;
+		border:1px solid;
+		margin:0;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	p{
+		display: none;
+	}
+</style>
+
+<script type="text/javascript">
+	function myfunc(xyz){
+		console.log(xyz)
+		console.log(xyz.nextElementSibling)
+		console.log(xyz.nextElementSibling.style.display)
+
+		if(xyz.nextElementSibling.style.display=="" || xyz.nextElementSibling.style.display=="none"){
+			xyz.nextElementSibling.style.display="block";
+		}
+		else if(xyz.nextElementSibling.style.display=="block"){
+			xyz.nextElementSibling.style.display="none";
+		}
+	}
+</script>
